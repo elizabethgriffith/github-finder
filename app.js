@@ -20,6 +20,7 @@ function searchUser(e){
       } else {
         // show profile
         ui.showProfile(data.profile)
+        ui.showRepos(data.repos)
       }
     })
   } else {
