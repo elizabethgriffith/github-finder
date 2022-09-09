@@ -32,8 +32,25 @@ class UI {
     `
    }
   // showRepos method
-  // showMessage method
-  // clearMessage method
+  // showAlert method
+  showAlert (message, className){
+    this.clearAlert()
+    // create div, add classes, insert text
+    const div = document.createElement('div')
+    div.className = className
+    div.appendChild(document.createTextNode(message))
+    // grab elements to determine div insertion
+    const container = document.querySelector('.searchContainer')
+    const search = document.querySelector('.search')
+    container.insertBefore(div, search)
+  }
+  // clearAlert method
+  clearAlert(){
+    const alert = document.querySelector('.alert')
+    if (alert){
+      alert.remove()
+    }
+  }
   // removeProfile method
   removeProfile() {
     this.profile.innerHTML = ''
