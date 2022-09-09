@@ -16,8 +16,10 @@ function searchUser(e){
     .then(data => {
       if(data.profile.message === 'Not Found'){
         // show alert
+        
       } else {
         // show profile
+        ui.showProfile(data.profile)
       }
     })
   } else {
