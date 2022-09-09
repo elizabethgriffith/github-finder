@@ -34,5 +34,8 @@ class UI {
   // showRepos method
   // showMessage method
   // clearMessage method
-  // clearProfile method
+  // removeProfile method
+  removeProfile() {
+    this.profile.innerHTML = ''
+  }
 }

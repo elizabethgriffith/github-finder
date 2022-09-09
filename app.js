@@ -24,5 +24,6 @@ function searchUser(e){
     })
   } else {
     // Remove profile
+    ui.removeProfile()
   }
 }
